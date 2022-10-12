@@ -9,26 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let people = ["Finn", "Leia", "Luke", "Rey"]
     
     
     var body: some View {
-        List {
-            ForEach(0..<5) {
-                Text("Dynamic row \($0)")
-            }
-            
-            
-            Section("Section 1") {
-                ForEach(people, id: \.self) {
-                    Text("Hello \($0)")
-                }
+Text("hello")
+        
+        
+    }
+    
+    func loadFile() {
+        if let fileURL = Bundle.main.url(forResource: "some-file", withExtension: "txt") {
+            if let fileContents = try? String(contentsOf: fileURL) {
+                fileContents
             }
         }
-        .listStyle(.grouped)
-        
-        
-        
     }
 }
 
@@ -52,4 +46,9 @@ struct ContentView_Previews: PreviewProvider {
  ID parameter is used to tell SwiftUI on how to identify each item in the array unique
  
  \.self is used for Strings and numbers
+ */
+
+
+/*
+ If you want to read the URL for a file in our main app bundle, we use Bundle.main.url(forResources: "some-file", withExtension: "txt")
  */
