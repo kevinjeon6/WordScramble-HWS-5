@@ -37,6 +37,10 @@ struct ContentView: View {
             .onSubmit {
                 addNewWord()
             }
+            .onAppear {
+                startGame()
+            }
+            //onAppear is a dedicated view modifier when a view is shown. Will run the function when the view is shown.
         }
         
     }
@@ -55,6 +59,26 @@ struct ContentView: View {
         }
         
     }
+    
+    func startGame() {
+        //Find file
+        if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
+            if let startWords = try? String(contentsOf: startWordsURL) {
+                let allWords = startWords.components(separatedBy: "\n")
+                rootWord = allWords.randomElement() ?? "silkworm"
+                return
+            }
+        }
+        fatalError("Could not load start.txt from bundle.")
+    }
+    
+    
+    func isOriginal(word: String) -> Bool {
+        !usedWords.contains(word)
+    }
+    
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

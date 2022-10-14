@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7408765928F9FA7700045EA9 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7408765828F9FA7600045EA9 /* start.txt */; };
 		7411E58628F4EF1B0024EBCB /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411E58528F4EF1B0024EBCB /* WordScrambleApp.swift */; };
 		7411E58828F4EF1B0024EBCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411E58728F4EF1B0024EBCB /* ContentView.swift */; };
 		7411E58A28F4EF1F0024EBCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7411E58928F4EF1F0024EBCB /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7408765828F9FA7600045EA9 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		7411E58228F4EF1B0024EBCB /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7411E58528F4EF1B0024EBCB /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
 		7411E58728F4EF1B0024EBCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				7411E58528F4EF1B0024EBCB /* WordScrambleApp.swift */,
 				7411E58728F4EF1B0024EBCB /* ContentView.swift */,
+				7408765828F9FA7600045EA9 /* start.txt */,
 				7411E58928F4EF1F0024EBCB /* Assets.xcassets */,
 				7411E58B28F4EF1F0024EBCB /* Preview Content */,
 			);
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7411E58D28F4EF1F0024EBCB /* Preview Assets.xcassets in Resources */,
+				7408765928F9FA7700045EA9 /* start.txt in Resources */,
 				7411E58A28F4EF1F0024EBCB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
